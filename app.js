@@ -25,7 +25,7 @@ app.use(cookieParser())
 
 
 const corUrl = {
-  origin: 'https://front-pmss-bh2itkx0y-priyank2609s-projects.vercel.app/',
+  origin: 'https://frontend-pms-indol.vercel.app/',
   credentials: true
 }
 app.use(cors(corUrl))
@@ -37,11 +37,7 @@ app.use('/milestone', mileStoneRoutes)
 app.use('/task', taskRoutes)
 app.use('/comment', commentRoutes)
 
-
-app.get('/', (req, res) =>
-  res.send("hey i am working"))
 app.listen(process.env.PORT, () => {
   console.log("I am listening");
 
 })
-
