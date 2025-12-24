@@ -25,7 +25,7 @@ app.use(cookieParser())
 
 
 const corUrl = {
-  origin: 'http://localhost:4200',
+  origin: 'https://pms-snowy-rho.vercel.app',
   credentials: true
 }
 app.use(cors(corUrl))
