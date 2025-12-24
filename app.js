@@ -37,7 +37,11 @@ app.use('/milestone', mileStoneRoutes)
 app.use('/task', taskRoutes)
 app.use('/comment', commentRoutes)
 
+
+app.get('/', (req, res) =>
+  res.send("hey i am working"))
 app.listen(process.env.PORT, () => {
   console.log("I am listening");
 
 })
+
